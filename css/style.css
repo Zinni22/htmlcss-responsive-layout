@@ -8,12 +8,12 @@
 
 
 /* REGOLE GENERALI */
-.container-600{
-    max-width: 600px;
+.container-big{
+    max-width: 1000px;
     margin: 0 auto;
 }
-.container-400{
-    max-width: 400px;
+.container-small{
+    max-width: 800px;
     margin: 0 auto;
 }
 .flex{
@@ -37,7 +37,6 @@ header{
 
 
 /* MAIN */
-
 /* Sezione Card */
 #card-container{
     flex-wrap: wrap;
@@ -61,15 +60,15 @@ header{
 #planning{
     background-color: var(--main-purple);
 }
-.planning-container{
+#planning-container{
     justify-content: space-between;
     align-content: flex-end;
     padding: 2rem 0;
 }
-.planning-container .card:first-child{
+#planning-container .card:first-child{
     width: calc(60% - 1rem);
 }
-.planning-container .card:nth-child(2){
+#planning-container .card:nth-child(2){
     width: 40%;
 }
 
@@ -83,4 +82,58 @@ header{
 }
 #testimonial-container .card img{
     width: 20%;
+}
+
+/* Sezione Benefits */
+#benefits{
+    background-color: var(--main-purple);
+}
+#benefits-container{
+    justify-content: space-between;
+    padding: 2rem 0.5rem;
+    flex-wrap: wrap;
+}
+#benefits-container .card{
+    width:calc(100% / 3 - 1rem);
+}
+
+/* Sezione About Us */
+#aboutus-container{
+    justify-content: space-between;
+    padding: 2rem 0.5rem;
+}
+#aboutus-container .card:first-child{
+    width:75%;
+}
+#aboutus-container .card:nth-child(2){
+    width:20%;
+}
+#aboutus-container .card > img{
+    width:100%;
+}
+
+/* Sezione Started */
+#started{
+    background-color: var(--main-purple);
+}
+#started-container{
+    padding: 2rem;
+}
+#started-container .card{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* FOOTER */
+footer{
+    background-color: #333333;
+}
+#footer-container{
+    padding: 2rem;
+}
+#footer-container .card{
+    width: 100%;
+    text-align: center;
 }
