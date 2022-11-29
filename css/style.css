@@ -83,6 +83,10 @@ header{
 .menu nav .button a{
     color: black;
 }
+.menu nav .hamburger{
+    color: white;
+    display: none;
+}
 
 
 /*****************************
@@ -120,6 +124,7 @@ MAIN
     width: calc((100% / 3 - 0.3rem) * 2);
     justify-content: space-between;
     padding: 1.5rem 1rem 0 1rem;
+    flex-wrap: wrap;
 }
 #card-container .card:first-child .text{
     text-align: left;
@@ -142,6 +147,7 @@ MAIN
     justify-content: space-between;
     align-items: flex-end;
     padding: 2rem 0;
+    flex-wrap: wrap;
 }
 #planning-container .card:first-child{
     width: calc(60% - 1rem);
@@ -264,6 +270,9 @@ h2{
 #aboutus-container .card:nth-child(2){
     width:20%;
 }
+#aboutus-container .card:nth-child(2) .circle-img{
+    background-image: url(../img/about.jpg);
+}
 #aboutus-container .card:nth-child(2) .circle-img i{
     position:absolute;
     top:0;
@@ -324,6 +333,7 @@ h2{
     text-decoration: none;
 }
 
+
 /*****************************
 FOOTER 
 *****************************/
@@ -346,4 +356,64 @@ footer{
 #footer-container .card p{
     font-size: 12px;
     margin-bottom: 1rem;
+}
+
+
+
+/*****************************
+RESPONSIVE 
+*****************************/
+
+/* Versione Tablet */
+@media screen and (max-width:768px) {
+
+    .container-big{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .container-small{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .menu > nav ul{
+        display: none;
+    }
+    .menu > nav .button{
+        display: none;
+    }
+    .menu nav .hamburger{
+        display: block;
+    }
+
+    /* Main */
+    /* Sezione card */
+
+    #card-container .card:first-child > .text{
+        width: 100%;
+    }
+
+    /* Sezione planning */
+    #planning-container .card:first-child{
+        width:100%;
+    }
+    #planning-container .card:nth-child(2){
+        width: 100%;
+    }
+
+    /* Sezione Benefits */
+    #benefits-container .card{
+        width:calc(100% / 2 - 0.5rem);
+    }
+
+    /* Sezione AboutUs */
+    #aboutus-container .card:first-child{
+        width:65%;
+    }
+    #aboutus-container .card:nth-child(2){
+        width:35%;
+    }
+    #aboutus-container .card:nth-child(2) .circle-img{
+        padding:80px;
+    }
 }
