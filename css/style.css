@@ -43,6 +43,9 @@ ul{
 .main-blue{
     color:#0084FD;
 }
+.relative{
+    position:relative;
+}
 
 
 /*****************************
@@ -188,6 +191,10 @@ h2{
     background-color: var(--main-purple);
     color:white;
     align-items: center;
+    text-align: left;
+}
+#testimonial-container .card p{
+    margin-bottom: 0;
 }
 .circle-img{
     padding: 70px;
@@ -250,13 +257,31 @@ h2{
     font-size: 50px;
     font-weight: 700;
     color: var(--main-purple);
-    margin-bottom: 5rem;
+}
+#aboutus-container .card:first-child p{
+    margin-top:2rem;
 }
 #aboutus-container .card:nth-child(2){
     width:20%;
 }
-#aboutus-container .card > img{
-    width:100%;
+#aboutus-container .card:nth-child(2) .circle-img i{
+    position:absolute;
+    top:0;
+    left: 70%;
+    font-size: 60px;
+    color: var(--main-purple);
+}
+#aboutus-container .card:nth-child(2) p{
+    color: var(--main-purple);
+    font-size: 20px;
+    font-weight: 700;
+    margin-top:1rem;
+}
+#aboutus-container .card:nth-child(2) .button{
+    background-color: var(--main-purple);
+    font-size: 12px;
+    padding: 0.5rem;
+    margin-top: 1rem;
 }
 
 
@@ -268,11 +293,36 @@ h2{
     padding: 2rem;
 }
 #started-container .card{
-    width: 100%;
+    width: 75%;
     text-align: center;
+    color: white;
+    margin: 0 auto;
 }
+#started-container .card h4{
+    color: #cbcaf1;
+}
+#started-container .card h2{
+    color: white;
+}
+#started-container .card span{
+    color: #fdc15f;
+    font-weight: 700;
+    font-size:4rem;
+}
+#started-container .card .button{
+    width: 40%;
+    padding:1.5rem 2rem;
+    margin: 1.5rem auto;
+    border-radius: 30px;
 
-
+}
+#started-container .card a{
+    text-decoration: underline;
+}
+#started-container .card .started-button{
+    color: var(--main-purple);
+    text-decoration: none;
+}
 
 /*****************************
 FOOTER 
@@ -284,6 +334,16 @@ footer{
     padding: 2rem;
 }
 #footer-container .card{
-    width: 100%;
+    width: 75%;
     text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+#footer-container .card a{
+    color: var(--main-purple);
+    text-decoration: underline;
+}
+#footer-container .card p{
+    font-size: 12px;
+    margin-bottom: 1rem;
 }
