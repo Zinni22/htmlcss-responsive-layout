@@ -131,7 +131,7 @@ MAIN
     width: 55%;
 }
 #card-container .card:first-child .img-container{
-    width:40%;;
+    width:40%;
     align-items: flex-end;
 }
 #card-container .card:first-child .img-container img{
@@ -198,6 +198,7 @@ h2{
     color:white;
     align-items: center;
     text-align: left;
+    flex-wrap: wrap;
 }
 #testimonial-container .card p{
     margin-bottom: 0;
@@ -255,6 +256,7 @@ h2{
 #aboutus-container{
     justify-content: space-between;
     padding: 2rem 0.5rem;
+    flex-wrap: wrap;
 }
 #aboutus-container .card:first-child{
     width:75%;
@@ -388,7 +390,6 @@ RESPONSIVE
 
     /* Main */
     /* Sezione card */
-
     #card-container .card:first-child > .text{
         width: 100%;
     }
@@ -415,5 +416,84 @@ RESPONSIVE
     }
     #aboutus-container .card:nth-child(2) .circle-img{
         padding:80px;
+    }
+}
+
+
+
+/* Versione Mobile */
+@media screen and (max-width:350px) {
+
+    .container-big{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .container-small{
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    /* Main */
+    /* Sezione card */
+    #card-container .card{
+        width: 100%;
+    }
+
+    #card-container .card:first-child{
+        width:100%;
+    }
+
+    #card-container .card:first-child .img-container{
+        width:80%;
+        margin: 0 auto;
+    }
+    #card-container .card:first-child .img-container img{
+        width:100%;
+        margin: 0 auto;
+    }
+
+    /* Sezione testimonial */
+    #testimonial-container .card{
+        text-align: center;
+    }
+
+    #testimonial-container .circle-img{
+        margin: 0 auto;
+    }
+
+    /* Sezione Benefits */
+    #benefits-container .card{
+        width:100%;
+    }
+
+    #aboutus-container .card:first-child{
+        width:75%;
+    }
+    #aboutus-container .card:first-child span{
+        font-size: 50px;
+        font-weight: 700;
+        color: var(--main-purple);
+    }
+    #aboutus-container .card:first-child p{
+        margin-top:2rem;
+    }
+    #aboutus-container .card:nth-child(2){
+        width:20%;
+    }
+
+    /* Sezione AboutUs */
+    #aboutus-container .card:first-child{
+        width:100%;
+    }
+    #aboutus-container .card:nth-child(2){
+        width:100%;
+    }
+    #aboutus-container .card:nth-child(2) .circle-img{
+        padding:100px;
+    }
+
+    /* Sezione Started */
+    #started-container .card{
+        width: 100%;
     }
 }
