@@ -429,7 +429,7 @@ RESPONSIVE
         margin: 0 auto;
     }
     .container-small{
-        max-width: 250px;
+        max-width: 300px;
         margin: 0 auto;
     }
 
@@ -495,5 +495,16 @@ RESPONSIVE
     /* Sezione Started */
     #started-container .card{
         width: 100%;
+        padding: 0;
+    }
+    #started-container .card .button{
+        width: 80%;
+    }
+
+    /* Sezione Footer */
+    #footer-container .card{
+        width: 100%;
+        padding: 0;
     }
 }
+
