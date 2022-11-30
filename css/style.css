@@ -198,7 +198,6 @@ h2{
     color:white;
     align-items: center;
     text-align: left;
-    flex-wrap: wrap;
 }
 #testimonial-container .card p{
     margin-bottom: 0;
@@ -455,6 +454,7 @@ RESPONSIVE
     /* Sezione testimonial */
     #testimonial-container .card{
         text-align: center;
+        flex-wrap: wrap;
     }
 
     #testimonial-container .circle-img{
